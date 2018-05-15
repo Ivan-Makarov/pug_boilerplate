@@ -1,4 +1,4 @@
-//General
+//gulp-renameral
 import gulp from 'gulp'
 import plumber from 'gulp-plumber'
 import sourcemaps from 'gulp-sourcemaps'
@@ -57,8 +57,8 @@ gulp.task('js', () => {
     }))       
     .pipe(rename({
       basename: "main",
-            suffix: ".min"
-        }))
+      suffix: ".min"
+    }))
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./build/js'))
@@ -91,7 +91,7 @@ gulp.task('watch', () => {
 })
 
 gulp.task('webserver', () => {
-  gulp.src('./build/')
+  gulp.src('./build')
     .pipe(webserver({
       port: '3000',
       livereload: true,
