@@ -1,14 +1,15 @@
 {
-  "name": "chisteam",
+  "name": "pug_boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "lint": "standard --fix --verbose | snazzy"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ivan Makarov",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^8.4.1",
@@ -28,8 +29,17 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
     "gulp-webserver": "^0.9.1",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-ftp": "^0.6.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
   }
 }
